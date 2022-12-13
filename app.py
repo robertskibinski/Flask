@@ -9,7 +9,6 @@ def my():
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('contact.html')
     if request.method == 'GET':
         print("We received GET")
         return render_template("form.html")
